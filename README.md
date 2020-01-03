@@ -35,5 +35,7 @@ bot_chatID = 'YOUR_CHAT-ID_FROM_USERINFOBOT'
 4. `YOUR_CHAT-ID_FROM_USERINFOBOT` - Chat ID from [@userinfobot](https://t.me/userinfobot)
 
 - Now config is completed. Save file and run using Python 3.
+
+### Other info
 - You can use Crontab to schedule automated raports. 
 - Upload / download stats from full current period (like in web dashboard)
