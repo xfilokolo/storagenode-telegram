@@ -2,7 +2,9 @@
 This simple app allows you to get most important stats of your node directly to your Telegram! <br>
 [Storj on Github](https://github.com/storj/storj)
 
-![Screen of sample Telegram message](https://i.imgur.com/SJovBcG.png)
+Now displays the value changes since the last check!
+
+![Screen of sample Telegram message](https://i.imgur.com/Hyq4IEq.png)
 
 ### What you need to prepare?
 - Storagenode IP address
@@ -22,20 +24,19 @@ This simple app allows you to get most important stats of your node directly to 
 
 - Edit `app.py` from this repo using your prefered text editor and fill config:
 ```python
-# CONFIG-BEGIN
-storagenode_name = 'YOUR_STORAGENODE_NAME'
-node_ip = 'YOUR_NODE_IP_ADDRESS'
-bot_token = 'YOUR_TELEGRAM_BOT_API_TOKEN_FROM_BOTFATHER'
-bot_chatID = 'YOUR_CHAT-ID_FROM_USERINFOBOT'
-# CONFIG-END
+nodeIp = '---CHANGE-ME---'
+botToken = '---CHANGE-ME---'
+botChatId = '---CHANGE-ME---'
+currency = 'USD'
 ```
-1. `YOUR_STORAGENODE_NAME` - Your invented node name (any)
-2. `YOUR_NODE_IP_ADDRESS` - Only IP, don't put here port or full dashboard URL. Local or Public node IP. If you running this app in the same network in wchich your node is running use node's local IP. If you running app from other network use public IP of your node.
-3. `YOUR_TELEGRAM_BOT_API_TOKEN_FROM_BOTFATHER` - Token from [@BotFather](https://t.me/BotFather)
-4. `YOUR_CHAT-ID_FROM_USERINFOBOT` - Chat ID from [@userinfobot](https://t.me/userinfobot)
+1. `nodeIp` - Only IP, don't put here port or full dashboard URL. Local or Public node IP. If you running this app in the same network in wchich your node is running use node's local IP. If you running app from other network use public IP of your node.
+2. `botToken` - Token from [@BotFather](https://t.me/BotFather)
+3. `botChatId` - Chat ID from [@userinfobot](https://t.me/userinfobot)
+4. `currency` - Your prefered currency to calculate earnings (USD/EUR/PLN/CNY or others). 
 
 - Now config is completed. Save file and run using Python 3.
 
 ### Other info
 - You can use Crontab to schedule automated raports. 
-- Upload / download stats from full current period (like in web dashboard)
+- Upload / download stats from full current period (like in web dashboard).
+- lastX.txt file is storage for last values. Keep them in same folder with `app.py`.
