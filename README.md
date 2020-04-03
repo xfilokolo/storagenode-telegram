@@ -1,3 +1,4 @@
+&#x1F534; WARNING: This repository uses the old version of the API which is no longer supported by storagenode!
 # Storj's Storagenode Telegram Monitoring
 This simple app allows you to get most important stats of your node directly to your Telegram! <br>
 [Storj on Github](https://github.com/storj/storj)
